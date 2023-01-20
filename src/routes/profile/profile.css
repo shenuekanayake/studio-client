@@ -1,0 +1,94 @@
+
+.profile__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.header-image {
+    background-color: var(--color-primary);
+    height: 30rem;
+    margin: 30px;
+    padding: 0;
+    position: relative;
+    margin-top: 2.3rem;
+    border-radius: 5px;
+}
+
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: .5rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 2px;
+    height: 3rem;
+    background-color: var(--color-primary);
+
+}
+
+/* User Requests */
+.user__container {
+    display: grid;
+    grid-template-columns: 3% 15% 25% 20% 17% 10% 20%;
+    gap: .5rem;
+    
+}
+
+.user__container span {
+    background: linear-gradient(var(--color-bg), var(--color-bg2));
+    border-radius: 10px;
+    padding: 0 1rem;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* Job Container */
+.job__container {
+    display: grid;
+    grid-template-columns: 3% 20% 15% 10% 27% 15% 20%;
+    gap: .5rem;
+}
+
+.job__container span {
+    background: linear-gradient(var(--color-bg), var(--color-bg2));
+    border-radius: 10px;
+    padding: 0 1rem;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+
+.details__contatiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.details__contatiner .profile-image {
+    /* min-height: 30rem;
+    width: 100%;
+    padding: 4rem; */
+    margin: 2rem 5rem;
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    background: url('../../assets/user.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-details {
+    padding: 8rem 1rem;
+    text-align: left;
+}
+
+.profile-details h1 {
+    font-size: 42px;
+}

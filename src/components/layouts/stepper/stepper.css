@@ -1,0 +1,31 @@
+body {
+    color: var(--color-white);
+}
+
+.circle {
+    width: 29px;
+    height: 29px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    line-height: 25px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.step-block .circleWrapper {
+    padding: 0 50px;
+}
+
+.selected .circle {
+    background-color: var(--color-white);;
+    color: var(--color-primary);;
+    border-color: var(--color-primary2);
+}

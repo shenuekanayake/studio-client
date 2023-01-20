@@ -1,0 +1,134 @@
+.about__container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap:15%;
+}
+
+.about__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-bg2));
+    background: url('../../assets/build.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:  5px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.about__img:hover {
+    border:  10px solid var(--color-white);
+}
+
+.about__img::after {
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-bg2));
+    transform: rotate(45deg);
+}
+
+.com__img {
+    background: url('../../assets/build.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about__content p {
+    margin: 2rem 0 2.6rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cards-im {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: var(--color-bg2);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+
+}
+
+.cards-im .card{
+    height: 16rem;
+    background: url('../../assets/location.png');
+}
+
+.cards-im .card:hover{
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+}
+
+
+.card .card-icon {
+    font-size: 30px;
+}
+
+.card h5 {
+    font-size: 1rem;
+}
+
+.card .card:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0px 0px 10px #0f1186;
+    cursor: default;
+}
+
+/* MEDIUM DEVICES */
+
+@media screen and (max-width: 1024px){
+
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .about__img {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .about__content {
+        margin: 1 0 1.5rem;
+    }
+    
+  }
+  
+  /* SMALL DEVICES */
+  
+  @media screen and (max-width: 600px){
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
+    }
+
+    .about__img {
+        width: 65%;
+        margin: 0rem auto 3rem;
+    }
+
+    .about__content {
+        text-align: center;
+    }
+    
+  }
